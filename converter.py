@@ -2,7 +2,7 @@ import json
 
 def convert_currency(amount, currency):
     """Логика конвертации для тестов"""
-    rates = {"USD": 92.5, "EUR": 100.2}
+    rates = {"USD": 92.5, "EUR": 100.2, "GBP": 115.7}
     if currency not in rates:
         return {"status": "error", "message": "Валюта не поддерживается"}
     if amount < 0:
